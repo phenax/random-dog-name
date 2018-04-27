@@ -5,6 +5,7 @@ const $heading = document.createElement('h2');
 $heading.style.textAlign = 'center';
 
 const $btn = document.createElement('button');
+$btn.textContent = 'That name sucks';
 
 document.body.appendChild($btn);
 document.body.appendChild($heading);
