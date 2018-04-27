@@ -19,4 +19,5 @@ export default [
     'Dipshit',
     'Tommy',
     'Anubis Cruger',
+    'Datadog',
 ];
