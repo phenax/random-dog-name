@@ -1,6 +1,6 @@
 {
   "name": "@phenax/random-dog-name",
-  "version": "0.0.0",
+  "version": "0.0.0-test",
   "description": "Get a new name for that garbage dog",
   "main": "build/random-dog-name.js",
   "repository": "https://github.com/phenax/random-dog-name",
