@@ -1,24 +1,32 @@
 (function () {
     'use strict';
 
-    var dognames = ['Ruffles', 'Snuffles', 'Snowey', 'Edgar', 'Abomination', 'RoboDog'];
+    var dognames = ['Ruffles', 'Snuffles', 'Snowey', 'Edgar Alan Poe', 'Abomination', 'RoboDog', 'Thanos', 'Rocket', 'Groot', 'Terminator', 'BatDog', 'Krypto', 'Tuffy', 'Rahul Gandhi', 'Husky', 'Hooch', 'Dipshit', 'Tommy', 'Anubis Cruger'];
 
-    const getRandomNumber = (min, max) => Math.floor(Math.random() * (max - min)) + min;
+    var getRandomNumber = function getRandomNumber(min, max) {
+        return Math.floor(Math.random() * (max - min)) + min;
+    };
 
-    const getRandomItem = array => array[getRandomNumber(0, array.length)];
+    var getRandomItem = function getRandomItem(array) {
+        return array[getRandomNumber(0, array.length)];
+    };
 
-    var getRandomDogname = (() => getRandomItem(dognames));
+    var getRandomDogname = (function () {
+        return getRandomItem(dognames);
+    });
 
-    const $heading = document.createElement('h2');
+    var $heading = document.createElement('h2');
     $heading.style.textAlign = 'center';
 
-    const $btn = document.createElement('button');
+    var $btn = document.createElement('button');
     $btn.textContent = 'That name sucks';
 
     document.body.appendChild($btn);
     document.body.appendChild($heading);
 
-    const renderDogname = () => $heading.textContent = `My dog is called: ${getRandomDogname()}`;
+    var renderDogname = function renderDogname() {
+        return $heading.textContent = 'My dog is called: ' + getRandomDogname();
+    };
 
     $btn.addEventListener('click', renderDogname);
     renderDogname();
