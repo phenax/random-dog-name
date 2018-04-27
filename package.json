@@ -1,9 +1,21 @@
 {
-  "name": "random-dog-name",
+  "name": "@phenax/random-dog-name",
   "version": "0.0.0",
-  "description": "__",
-  "main": "__",
-  "repository": "__",
+  "description": "Get a new name for that garbage dog",
+  "main": "build/random-dog-name.js",
+  "repository": "https://github.com/phenax/random-dog-name",
   "author": "Akshay Nair<phenax5@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "build": "rollup -c",
+    "serve": "serve"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.2",
+    "babel-preset-env": "^1.6.1",
+    "rollup": "^0.58.2",
+    "rollup-plugin-babel": "^3.0.4",
+    "rollup-plugin-node-resolve": "^3.3.0",
+    "serve": "^6.5.6"
+  }
 }
