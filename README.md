@@ -1,5 +1,7 @@
 
 # random-dog-namimizeinator
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/phenax/random-dog-name.svg)](https://greenkeeper.io/)
 Get a random dog name. You can name your cat with this too.
 
 ### Install
